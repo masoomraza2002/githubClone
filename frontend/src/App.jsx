@@ -1,14 +1,13 @@
- 
-function App() {
- 
+import React from 'react';
+import Routes from './Routes';
+import { AuthProvider } from './authContext';
 
-  return (
-    <>
-        Backend is complete
-        working on fronend
-        
-    </>
-  )
+function App() {
+    return (
+        <AuthProvider>
+            <Routes />
+        </AuthProvider>
+    );
 }
 
-export default App
+export default App;
